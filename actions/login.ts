@@ -50,7 +50,7 @@ export const login = async (values: z.infer<typeof LoginSchema>) => {
             case "CredentialsSignin":
                return { error: "Adresse courriel ou mot de passe invalide!" };
             default:
-               return { error: "Erreur inconnue!" };
+               return { error: "Une erreur s'est produite!" };
          }
       }
 
