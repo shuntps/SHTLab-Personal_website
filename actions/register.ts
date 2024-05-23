@@ -22,7 +22,7 @@ export const register = async (values: z.infer<typeof RegisterSchema>) => {
    const existingUser = await getUserByEmail(email);
 
    if (existingUser) {
-      return { error: "Cette adresse courriel est déjà utilisée" };
+      return { error: "Cette adresse email est déjà utilisée" };
    }
 
    await db.user.create({ data: { name, email, password: hashedPassword } });
@@ -33,5 +33,5 @@ export const register = async (values: z.infer<typeof RegisterSchema>) => {
       verificationToken.token
    );
 
-   return { success: "Courriel de confirmation envoyé!" };
+   return { success: "Email de confirmation envoyé!" };
 };
