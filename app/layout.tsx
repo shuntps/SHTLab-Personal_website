@@ -8,7 +8,7 @@ import "@/styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-   title: "SHT Lab",
+   title: "My app",
    description: "En développement",
 };
 

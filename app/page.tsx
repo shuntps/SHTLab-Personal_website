@@ -19,11 +19,12 @@ export default function Home() {
                   font.className
                )}
             >
-               SHT Lab
+               My app
             </h1>
             <p className="text-red-700 text-lg font-bold">En développement</p>
             <div>
-               <LoginButton>
+               <LoginButton asChild>
+                  {/* <LoginButton mode="modal" asChild> */}
                   <Button variant="secondary" size="lg">
                      Connexion
                   </Button>

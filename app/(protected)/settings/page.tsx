@@ -73,7 +73,7 @@ const SettingsPage = () => {
    return (
       <Card className="ml-2 mr-2 shadow-lg">
          <CardHeader>
-            <p className="font-semibold text-center">🏵️ Paramètres</p>
+            <p className="font-semibold text-center">⚙️ Paramètres</p>
          </CardHeader>
          <CardContent>
             <Form {...form}>
